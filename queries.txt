@@ -3,13 +3,20 @@ SQL Queries:
 
 2. Input a passenger’s last name and first name and retrieve all trains they are booked on.
 
-
+-- OLD (Implicit JOIN)
 SELECT train_name
 FROM Train T, Booked B, Passenger P
 WHERE 
   P.first_name = 'Fletcher' AND P.last_name = 'Flosi'
   AND P.ssn = B.passenger_ssn AND B.train_number = T.train_number;
 
+-- UPDATED (Explicit JOIN)
+
+SELECT Train.train_name
+FROM Train 
+INNER JOIN Booked ON Train.train_number = Booked.train_number
+INNER JOIN Passenger ON Booked.passenger_ssn = Passenger.ssn
+WHERE Passenger.last_name = "James" AND Passenger.first_name = "Butt" AND Booked.status = "Booked";
 
 
 3. Input the Day and list the passengers travelling on that day with confirmed tickets. 
