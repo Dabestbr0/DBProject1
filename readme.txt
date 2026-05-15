@@ -1,3 +1,6 @@
+Revamped Fork by Lauren Eyum
+Reason: Continuing from Old Project, Optimizing, Networking and Mastering for STAR Stories.
+
 ---CSE 3330 Project 1---
 Harrison Young 1001847213
 Lauren Eyum 1001859094
@@ -22,7 +25,7 @@ We copy and pasted each query from queries.txt into the sql session to complete 
 
 
 ---Contribution List---
-Lauren - Created ER Diagram, worked on queries 7, 8, and 9
+Lauren - Created ER Diagram, worked on queries 7, 8, and 9. Revamped Query #1.
 Harrison - Put ER Diagram into Lucidchart, made CREATE TABLES and import statements and put them into createtable.sql, worked on queries 2 and 3
 Jaime - worked on queries 4, 5, and 6
 
